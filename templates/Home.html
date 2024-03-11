@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="icon" href="{% static 'images/Home  Icon.png' %}   ">
     <style>
@@ -33,6 +37,12 @@
 </head>
 <body>
 <h1>THIS IS MY HOMEPAGE</h1>
+
+<a href="{% url 'about' %}" class="btn btn-outline-secondary">About</a>
+<a href="{% url 'form' %}" class="btn btn-outline-secondary">Form</a>
+
+<br><br>
+
 <img src="{% static 'images/I1.jpeg' %}" alt="">
 <img src="{% static 'images/I2.jpeg' %}" alt="">
 <img src="{% static 'images/I3.jpeg' %}" alt="">

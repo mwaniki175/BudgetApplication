@@ -5,7 +5,7 @@ from BudgetApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('about/', views.about),
-    path('form/', views.form),
+    path('', views.home,name = 'homepage'),
+    path('about/', views.about, name = 'about'),
+    path('form/', views.form, name = 'form'),
 ]
